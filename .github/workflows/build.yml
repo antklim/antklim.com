@@ -14,6 +14,16 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ap-southeast-2
+        role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+        role-external-id: ${{ secrets.AWS_ROLE_EXTERNAL_ID }}
+        role-duration-seconds: 600
+        role-session-name: DeploySession
     - name: Use Node.js
       uses: actions/setup-node@v2
       with:
@@ -22,5 +32,6 @@ jobs:
       run: |
         npm install
         npm run build
-    - name: Deploy
-      run: echo "Deploy -> copy dist to S3"
+    - name: Copy site assets to the bucket
+      run: |
+        aws s3 sync ./dist/ s3://${{ secrets.AWS_DEPLOY_BUCKET }} --dryrun
