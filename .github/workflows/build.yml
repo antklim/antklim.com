@@ -28,17 +28,10 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '14'
-    - name: Echo build variables
-      run: |
-        echo GITHUB_RUN_ID $GITHUB_RUN_ID
-        echo GITHUB_RUN_NUMBER $GITHUB_RUN_NUMBER
-        echo GITHUB_SHA $GITHUB_SHA
-        echo Short GITHUB_SHA ${GITHUB_SHA::8}
     - name: npm install and build
       run: |
         npm install
         npm run build
-    # TODO: write to a separate folders, each per commit/build ID
     - name: Copy site assets to the bucket
       run: |
-        aws s3 sync ./dist/ s3://${{ secrets.AWS_DEPLOY_BUCKET }} --dryrun
+        aws s3 sync ./dist/ s3://${{ secrets.AWS_DEPLOY_BUCKET }}/${GITHUB_SHA::8} --dryrun
