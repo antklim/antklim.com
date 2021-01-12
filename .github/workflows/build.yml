@@ -34,4 +34,4 @@ jobs:
         npm run build
     - name: Copy site assets to the bucket
       run: |
-        aws s3 sync ./dist/ s3://${{ secrets.AWS_DEPLOY_BUCKET }}/${GITHUB_SHA::8} --dryrun
+        aws s3 sync ./dist/ s3://${{ secrets.AWS_DEPLOY_BUCKET }}/${GITHUB_SHA::8}
