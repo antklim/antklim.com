@@ -26,4 +26,4 @@ jobs:
         role-session-name: ProductionDeploySession
     - name: Copy site assets from stage to prod bucket
       run: |
-        aws s3 sync s3://${{ secrets.AWS_STAGE_BUCKET }} s3://${{ secrets.AWS_PROD_BUCKET }}
+        aws s3 sync s3://${{ secrets.AWS_STAGE_BUCKET }} s3://${{ secrets.AWS_PROD_BUCKET }} --delete
