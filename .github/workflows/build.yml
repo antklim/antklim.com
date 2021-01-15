@@ -23,7 +23,7 @@ jobs:
         role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
         role-external-id: ${{ secrets.AWS_ROLE_EXTERNAL_ID }}
         role-duration-seconds: 1200
-        role-session-name: DeploySession
+        role-session-name: StageDeploySession
     - name: Use Node.js
       uses: actions/setup-node@v2
       with:
