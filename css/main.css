@@ -94,6 +94,10 @@ body {
   padding-bottom: 1em;
 }
 
+.profile p {
+  margin-bottom: 0.75em;
+}
+
 .hidden,
 [hidden] {
   display: none !important;
