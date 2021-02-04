@@ -55,8 +55,9 @@ textarea {
   --primary-color: #167dd9;
   --on-primary-color: #ebecee;
 
-  --primary-font: 'Source Sans Pro'; /* header, titles, subtitles, button labels */
-  --secondary-font: 'Lato'; /* content text */
+  --logo-font: 'Major Mono Display';  
+  --primary-font: 'PT Mono'; /* header, titles, subtitles, button labels */
+  --secondary-font: 'Open Sans'; /* 'Lato' content text */
 }
 
 body {
@@ -68,20 +69,25 @@ body {
   max-width: 760px;
 }
 
+.logo {
+  color: var(--primary-color);
+  font-family: var(--logo-font);
+  font-size: 28px;
+  padding-top: 1em;
+}
+
 .intro {
   color: var(--on-background-color);
   font-size: 40px;
   font-style: normal;
-  line-height: 46px;
-  padding: 2em 0 0.3em 0;
+  line-height: 40px;
+  padding: 3em 0 0.3em 0;
 }
 
 .profession {
   color: var(--on-background-color);
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
+  font-size: 22px;
+  font-weight: 900;
   padding-bottom: 1em;
 }
 
