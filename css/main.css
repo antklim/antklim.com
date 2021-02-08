@@ -104,6 +104,29 @@ body {
   margin-bottom: 0.75em;
 }
 
+.social-links {
+  text-align: center;
+}
+
+.social-links img {
+  height: 24px;
+  transition: opacity 0.8;
+  filter: invert(54%) sepia(78%) saturate(5269%) hue-rotate(191deg) brightness(89%) contrast(90%);
+}
+
+.social-links img:hover {
+  opacity: 0.6;
+}
+
+.social-links {
+  list-style: none;
+  display: inline;
+}
+
+.social-links li {
+  display: inline;
+}
+
 .links {
   text-align: end;
 }
