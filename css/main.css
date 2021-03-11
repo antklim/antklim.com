@@ -65,12 +65,16 @@ body {
   font-family: var(--primary-font), var(--secondary-font), sans-serif;
 }
 
-.container {
-  max-width: 760px;
+.page-header {
+  padding: 1.5em 0.5em;
 }
 
-.header {
-  padding-top: 1em;
+.page-footer {
+  padding: 2.5em 0 0;
+}
+
+.container {
+  max-width: 760px;
 }
 
 .logo {
@@ -106,97 +110,27 @@ body {
 .profile p {
   margin-bottom: 0.75em;
 }
-
-.menu-toggle {
-  color: var(--primary-color);
-  display: inline;
-  float: right;
-  font-family: var(--logo-font);
-  font-size: 28px;
-  padding: 0 1.0rem;
+.social {
+  margin: 0 auto;
 }
 
-.menu-toggle span {
-  color: var(--primary-color);
-}
-
-.main-menu {
-  display: none;
-  float: right;
-  /* height: 100%;
-  left: -200px; */
-  overflow-x: visible;
-  overflow-y: scroll;
-  padding-top: 1.0rem;
-  /* position: absolute; */
-  /* top: 0; */
-  transition: left 0.3s ease, box-shadow 0.3s ease;
-  z-index: 999;  
-}
-
-.main-menu ul {
+.social ul {
+  display: flex;
   list-style: none;
-  margin: 0;
-  padding: 2.5em 0 0;
-  /* width: 200px; */
 }
 
-.main-menu a {
-  padding: 0 1.0rem;
+.social a {
+  padding: 0 1.0em;
 }
 
-.main-menu img {
-  height: 24px;
+.social img {
+  height: 28px;
   transition: opacity 0.8;
   filter: invert(54%) sepia(78%) saturate(5269%) hue-rotate(191deg) brightness(89%) contrast(90%);
 }
 
-.main-menu img:hover {
+.social img:hover {
   opacity: 0.6;
-}
-
-.main-menu .menu-close {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.main-menu:target,
-.main-menu[aria-expanded="true"] {
-  display: block;
-  left: 0;
-  outline: none;
-}
-
-.main-menu:target .menu-close,
-.main-menu[aria-expanded="true"] .menu-close {
-  z-index: 1001;
-}
-
-.main-menu:target ul,
-.main-menu[aria-expanded="true"] ul {
-  position: relative;
-  z-index: 1000;
-}
-
-.main-menu:target + .backdrop,
-.main-menu[aria-expanded="true"] + .backdrop {
-  cursor: default;
-  display: block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 998;
-}
-
-@supports (position: fixed) {
-  .main-menu,
-  .main-menu:target + .backdrop,
-  .main-menu[aria-expanded="true"] + .backdrop {
-    position: fixed;
-  }
 }
 
 a,
@@ -317,27 +251,5 @@ a:active {
   h2,
   h3 {
     page-break-after: avoid;
-  }
-}
-
-@media (min-width: 500px) {
-  .menu-toggle,
-  .main-menu .menu-close {
-    display: none;
-  }
-
-  .main-menu {
-    display: inline;
-    height: auto;
-    left: auto;
-    position: relative;
-    top: auto;
-  }
-
-  .main-menu ul {
-    display: flex;
-    height: auto;
-    padding: 0;
-    width: auto;
   }
 }
