@@ -1,10 +1,27 @@
 {
+  "fmt": {
+    "files": {
+      "exclude": [
+        "./_site"
+      ]
+    }
+  },
+  "lint": {
+    "files": {
+      "exclude": [
+        "./_site"
+      ]
+    }
+  },
   "tasks": {
+    "clean": "rm -rf _site",
     "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
     "build": "deno task lume",
     "serve": "deno task lume -s"
   },
-  "imports": {
-    "lume/": "https://deno.land/x/lume@v1.18.4/"
+  "importMap": "import_map.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:preact"
   }
 }
