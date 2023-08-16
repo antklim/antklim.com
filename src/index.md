@@ -1,3 +1,8 @@
+---
+title: Anton Klimenko
+layout: layouts/root.tsx
+---
+
 # Welcome
 
 Hello, I'm Anton Klimenko
