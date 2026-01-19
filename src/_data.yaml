@@ -1,0 +1,11 @@
+layout: layout.tsx
+links:
+  - id: github
+    text: My GitHub profile
+    url: https://github.com/antklim
+  - id: linkedin
+    text: My LinkedIn profile
+    url: https://linkedin.com/in/anton-klimenko-a5635a60
+  - id: medium
+    text: My Medium profile
+    url: https://antklim.medium.com/
