@@ -2,8 +2,6 @@ name: Production release
 
 on: 
   workflow_dispatch:
-    branches:
-    - master
 
 jobs:
   release:
