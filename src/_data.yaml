@@ -3,6 +3,9 @@ links:
   - id: github
     text: My GitHub profile
     url: https://github.com/antklim
+  - id: codeberg
+    text: My Codeberg profile
+    url: https://codeberg.org/antklim
   - id: linkedin
     text: My LinkedIn profile
     url: https://linkedin.com/in/anton-klimenko-a5635a60
