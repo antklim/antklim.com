@@ -80,6 +80,12 @@ body {
   font-size: 28px;
 }
 
+.misc {
+  color: var(--primary-color);
+  font-family: var(--logo-font);
+  font-size: 18px;
+}
+
 .intro {
   color: var(--on-background-color);
   font-size: 40px;
