@@ -1,4 +1,5 @@
-layout: layout.tsx
+title: Anton Klimenko
+layout: layouts/main.vto
 links:
   - id: github
     text: My GitHub profile

@@ -1,13 +1,9 @@
 import lume from "lume/mod.ts";
-import jsx from "lume/plugins/jsx.ts";
 
 const site = lume({
   src: "./src",
 });
 
-site.use(jsx());
-
-site.add("index.html");
 site.add("404.html");
 
 for await (const dirEntry of Deno.readDir("./src/_assets/img")) {

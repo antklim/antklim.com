@@ -20,7 +20,7 @@
     })(window,document,'script','dataLayer','GTM-T54VBVD');</script>
     <!-- End Google Tag Manager -->
 
-    <title>Anton Klimenko</title>
+    <title>{{title}}</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans&family=PT+Mono&display=swap"
@@ -46,7 +46,7 @@
     <div id="root">
       <div class="container">
         <header class="row page-header">
-          <div class="column logo">
+          <div class="logo">
             #AK
           </div>
           <div class="column">
@@ -56,29 +56,11 @@
           </div>
         </header>
 
-        <main id="main" class="main-content">
-          <div class="row intro">
-            <div class="column">
-              Hello, I'm Anton Klimenko
-            </div>
-          </div>
-          <div class="row profession">
-            <div class="column">
-              Software Engineer specializing in backend development
-            </div>
-          </div>
-          <div class="row profile">
-            <div class="column">
-              <p>
-                Over the last 20 years, I have gained meaningful experiences in diverse software development maturity organizations, from startups to enterprises. I help companies improve their products in modernizing existing and delivering new IT services.
-              </p>
-              <p>
-                In development, I follow the principles of the Clean Architecture, 12 Factor App, SOLID, and Agile.
-              </p>
-            </div>
-          </div>
+        <main>
+          {{ content }}
         </main>
 
+        <!--TODO: iterate over links and render components-->
         <footer id="nav-footer" class="page-footer">
           <div class="row">
             <div id="social" class="social">
