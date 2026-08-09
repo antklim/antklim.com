@@ -1,0 +1,15 @@
+<footer id="nav-footer" class="page-footer">
+  <div class="row">
+    <div id="social" class="social">
+      <ul>
+        {{ for link of links }}
+        <li>
+          <a href="{{ link.url }}" target="_blank" rel="noreferrer noopener">
+            <img src="/img/{{ link.id }}.svg" alt="{{ link.text }}" height="24" width="24">
+          </a>
+        </li>
+        {{ /for }}
+      </ul>
+    </div>
+  </div>
+</footer>

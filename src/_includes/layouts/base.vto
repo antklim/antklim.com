@@ -51,31 +51,7 @@
           {{ content }}
         </main>
 
-        <!--TODO: iterate over links and render components-->
-        <footer id="nav-footer" class="page-footer">
-          <div class="row">
-            <div id="social" class="social">
-              <ul>
-                <li>
-                  <a href="https://github.com/antklim" target="_blank" rel="noreferrer noopener"><img src="/img/github.svg"
-                      alt="github" height="24" width="24"></a>
-                </li>
-                <li>
-                  <a href="https://codeberg.org/antklim" target="_blank" rel="noreferrer noopener"><img
-                    src="/img/codeberg.svg" alt="codeberg" height="24" width="24"></a>
-                </li>
-                <li>
-                  <a href="https://linkedin.com/in/anton-klimenko-a5635a60" target="_blank" rel="noreferrer noopener"><img
-                      src="/img/linkedin.svg" alt="linkedin" height="24" width="24"></a>
-                </li>
-                <li>
-                  <a href="https://antklim.medium.com/" target="_blank" rel="noreferrer noopener"><img src="/img/medium.svg"
-                      alt="medium" height="24" width="24"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </footer>
+        {{ comp.footer() }}
       </div>
     </div>
   </body>

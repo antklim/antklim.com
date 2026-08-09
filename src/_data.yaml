@@ -1,3 +1,5 @@
+# This file provides information shared across all pages of the site.
+# It's used by the base layouts and components.
 title: Anton Klimenko
 layout: layouts/main.vto
 links:
