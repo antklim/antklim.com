@@ -52,9 +52,9 @@ textarea {
   --primary-color: #167dd9;
   --on-primary-color: #ebecee;
 
-  --logo-font: 'Major Mono Display';
-  --primary-font: 'PT Mono'; /* header, titles, subtitles, button labels */
-  --secondary-font: 'Open Sans'; /* 'Lato' content text */
+  --logo-font: "Major Mono Display";
+  --primary-font: "PT Mono"; /* header, titles, subtitles, button labels */
+  --secondary-font: "Open Sans"; /* 'Lato' content text */
 }
 
 body {
@@ -94,7 +94,7 @@ body {
   padding: 3em 0 0.3em 0;
 }
 
-.profession {
+.level {
   color: var(--on-background-color);
   font-size: 22px;
   font-weight: 900;
@@ -123,13 +123,14 @@ body {
 }
 
 .social a {
-  padding: 0 1.0em;
+  padding: 0 1em;
 }
 
 .social img {
   height: 28px;
   transition: opacity 0.8;
-  filter: invert(54%) sepia(78%) saturate(5269%) hue-rotate(191deg) brightness(89%) contrast(90%);
+  filter: invert(54%) sepia(78%) saturate(5269%) hue-rotate(191deg)
+    brightness(89%) contrast(90%);
 }
 
 .social img:hover {
