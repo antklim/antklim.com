@@ -4,8 +4,6 @@ const site = lume({
   src: "./src",
 });
 
-site.add("404.html");
-
 for await (const dirEntry of Deno.readDir("./src/_assets/img")) {
   if (dirEntry.isFile) {
     site.add(`_assets/img/${dirEntry.name}`, `/img/${dirEntry.name}`);
