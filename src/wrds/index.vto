@@ -1,0 +1,23 @@
+---
+hidden: true # excludes the current page from being listed
+---
+
+<ul>
+  {{ for post of search.pages("url^=/wrds/ hidden=false") }}
+    <li>
+      <a href="{{ post.url }}">
+        <h2>{{ post.title }}</h2>
+      </a>
+
+      {{ if post.description }}
+        <p>{{ post.description }}</p>
+      {{ /if }}
+
+      {{ if post.date }}
+        <time datetime="{{ post.date }}">
+          {{ post.date }}
+        </time>
+      {{ /if }}
+    </li>
+  {{ /for }}
+</ul>

@@ -1,8 +1,12 @@
 import lume from "lume/mod.ts";
+import search from "lume/plugins/search.ts";
 
 const site = lume({
   src: "./src",
+  prettyUrls: false,
 });
+
+site.use(search());
 
 for await (const dirEntry of Deno.readDir("./src/_assets/img")) {
   if (dirEntry.isFile) {
