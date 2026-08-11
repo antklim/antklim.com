@@ -88,17 +88,13 @@ body {
 
 .intro {
   color: var(--on-background-color);
-  font-size: 40px;
-  font-style: normal;
-  line-height: 40px;
-  padding: 3em 0 0.3em 0;
+  margin-bottom: 0;
+  padding: 2.5em 0 0.2em 0;
 }
 
 .experience {
   color: var(--on-background-color);
-  font-size: 22px;
-  font-weight: 900;
-  padding-bottom: 1em;
+  padding-bottom: 0.2em;
 }
 
 .profile {
