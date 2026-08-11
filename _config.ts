@@ -1,4 +1,5 @@
 import lume from "lume/mod.ts";
+import date from "lume/plugins/date.ts";
 import search from "lume/plugins/search.ts";
 
 const site = lume({
@@ -6,6 +7,7 @@ const site = lume({
   prettyUrls: false,
 });
 
+site.use(date());
 site.use(search());
 
 for await (const dirEntry of Deno.readDir("./src/_assets/img")) {

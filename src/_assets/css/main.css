@@ -133,6 +133,36 @@ body {
   opacity: 0.6;
 }
 
+.wrds-list {
+  margin-top: 3em;
+}
+
+.wrds-list hr {
+  margin: 0.7rem 0;
+}
+
+.wrds-list ul {
+  list-style-type: none;
+}
+
+.wrds-list li {
+  margin-bottom: 0;
+}
+
+.wrds-list h5 {
+  color: var(--on-background-color);
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.wrds-list h6 {
+  color: var(--on-background-color);
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
 a,
 a:hover,
 a:visited,
