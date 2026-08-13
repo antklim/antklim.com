@@ -1,14 +1,12 @@
 interface FrontMatterProps {
   title: string;
-  desc: string | null;
   tags: string | null;
 }
 
-function frontMatter({ title, desc, tags }: FrontMatterProps) {
+function frontMatter({ title, tags }: FrontMatterProps) {
   const now = new Date();
   return `---
 title: ${title}
-description: ${desc ?? ""}
 date: ${now.toISOString().slice(0, 10)}
 ${tagsBuilder(tags)}
 ---
@@ -29,7 +27,6 @@ function tagsBuilder(tags: string | null): string {
 export default function () {
   const fileName = prompt("Post file name:");
   const title = prompt("Post title:");
-  const desc = prompt("Short description:");
   const tags = prompt("Post tags (comma-separated):");
 
   if (!fileName) throw Error("file name is required to create a new post");
@@ -37,6 +34,6 @@ export default function () {
 
   return {
     path: `/wrds/${fileName.toLowerCase()}.md`,
-    content: frontMatter({ title, desc, tags }),
+    content: frontMatter({ title, tags }),
   };
 }
