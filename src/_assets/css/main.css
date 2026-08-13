@@ -55,6 +55,15 @@ textarea {
   --logo-font: "Major Mono Display";
   --primary-font: "PT Mono"; /* header, titles, subtitles, button labels */
   --secondary-font: "Open Sans"; /* 'Lato' content text */
+
+  --heading1: 46px;
+  --heading2: 36px;
+  --heading3: 28px;
+  --heading4: 22px;
+  --heading5: 18px;
+  --heading6: 16px;
+
+  --content-font-size: 16px;
 }
 
 body {
@@ -133,80 +142,75 @@ body {
   opacity: 0.6;
 }
 
-.wrds-list {
+.posts-list {
   margin-top: 3em;
 }
 
-.wrds-list hr {
+.posts-list hr {
   margin: 0.7rem 0;
 }
 
-.wrds-list ul {
+.posts-list ul {
   list-style-type: none;
 }
 
-.wrds-list li {
+.posts-list li {
   margin-bottom: 0;
 }
 
-.wrds-list h1,
+.post {
+  font-family: var(--secondary-font);
+  font-size: var(--content-font-size);
+}
+
+.post h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   color: var(--on-background-color);
+  font-family: var(--primary-font);
   margin: 0;
   padding: 0;
 }
 
-.wrds-post h1 {
-  font-size: 46px;
+.post h1 {
+  font-size: var(--heading1);
 }
-.wrds-post h2 {
-  font-size: 36px;
+.post h2 {
+  font-size: var(--heading2);
 }
-.wrds-post h3 {
-  font-size: 28px;
+.post h3 {
+  font-size: var(--heading3);
 }
-.wrds-post h4 {
-  font-size: 22px;
+.post h4 {
+  font-size: var(--heading4);
 }
-.wrds-post h5 {
-  font-size: 18px;
+.post h5 {
+  font-size: var(--heading5);
 }
-.wrds-post h6 {
-  font-size: 16px;
-}
-
-.wrds-post h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--on-background-color);
-  margin: 0;
-  padding: 0;
+.post h6 {
+  font-size: var(--heading6);
 }
 
-.wrds-post h1 {
-  font-size: 46px;
+.post table {
+  margin: 1.2rem 0;
+  width: 100%;
 }
-.wrds-post h2 {
-  font-size: 36px;
+
+.post th,
+.post td {
+  padding: 0.8rem 1rem;
 }
-.wrds-post h3 {
-  font-size: 28px;
+
+.post th {
+  font-family: var(--primary-font);
+  font-size: var(--heading5);
 }
-.wrds-post h4 {
-  font-size: 22px;
-}
-.wrds-post h5 {
-  font-size: 18px;
-}
-.wrds-post h6 {
-  font-size: 16px;
+
+.post td {
+  font-size: var(--content-font-size);
 }
 
 a,

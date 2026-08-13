@@ -2,7 +2,7 @@
 hidden: true # excludes the current page from being listed
 ---
 
-<div id="wrds-list" class="wrds-list">
+<div id="posts-list" class="posts-list">
   <ul>
     {{ for index, post of search.pages("url^=/wrds/ hidden=false", "title") }}
       {{ if index != 0 }}
