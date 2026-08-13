@@ -16,7 +16,7 @@ hidden: true # excludes the current page from being listed
             </div>
             <div class="column">
               {{ if post.date }}
-                <h6>{{ post.date |> date('HUMAN_DATE') }}</h6>
+                <h5><small>{{ post.date |> date('HUMAN_DATE') }}</small></h5>
               {{ /if }}
             </div>
           </div>
