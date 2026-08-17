@@ -1,6 +1,8 @@
 {
   "imports": {
-    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.6/"
+    "hljs-zig": "npm:highlightjs-zig@^1.0.2",
+    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.6/",
+    "prismjs": "npm:prismjs@^1.30.0"
   },
   "permissions": {
     "lume": {

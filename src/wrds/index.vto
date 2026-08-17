@@ -4,7 +4,7 @@ hidden: true # excludes the current page from being listed
 
 <div id="posts-list" class="posts-list">
   <ul>
-    {{ for index, post of search.pages("url^=/wrds/ hidden=false", "title") }}
+    {{ for index, post of search.pages("url^=/wrds/ hidden=false", "date=desc") }}
       {{ if index != 0 }}
         <hr>
       {{ /if }}
