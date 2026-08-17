@@ -52,9 +52,18 @@ textarea {
   --primary-color: #167dd9;
   --on-primary-color: #ebecee;
 
-  --logo-font: 'Major Mono Display';
-  --primary-font: 'PT Mono'; /* header, titles, subtitles, button labels */
-  --secondary-font: 'Open Sans'; /* 'Lato' content text */
+  --logo-font: "Major Mono Display";
+  --primary-font: "PT Mono"; /* header, titles, subtitles, button labels */
+  --secondary-font: "Open Sans"; /* 'Lato' content text */
+
+  --heading1: 46px;
+  --heading2: 36px;
+  --heading3: 28px;
+  --heading4: 22px;
+  --heading5: 18px;
+  --heading6: 16px;
+
+  --content-font-size: 16px;
 }
 
 body {
@@ -80,19 +89,21 @@ body {
   font-size: 28px;
 }
 
-.intro {
-  color: var(--on-background-color);
-  font-size: 40px;
-  font-style: normal;
-  line-height: 40px;
-  padding: 3em 0 0.3em 0;
+.misc {
+  color: var(--primary-color);
+  font-family: var(--logo-font);
+  font-size: 18px;
 }
 
-.profession {
+.intro {
   color: var(--on-background-color);
-  font-size: 22px;
-  font-weight: 900;
-  padding-bottom: 1em;
+  margin-bottom: 0;
+  padding: 2.5em 0 0.2em 0;
+}
+
+.experience {
+  color: var(--on-background-color);
+  padding-bottom: 0.2em;
 }
 
 .profile {
@@ -117,17 +128,92 @@ body {
 }
 
 .social a {
-  padding: 0 1.0em;
+  padding: 0 1em;
 }
 
 .social img {
   height: 28px;
   transition: opacity 0.8;
-  filter: invert(54%) sepia(78%) saturate(5269%) hue-rotate(191deg) brightness(89%) contrast(90%);
+  filter: invert(54%) sepia(78%) saturate(5269%) hue-rotate(191deg)
+    brightness(89%) contrast(90%);
 }
 
 .social img:hover {
   opacity: 0.6;
+}
+
+.posts-list {
+  margin-top: 3em;
+}
+
+.posts-list hr {
+  margin: 0.7rem 0;
+}
+
+.posts-list ul {
+  list-style-type: none;
+}
+
+.posts-list li {
+  margin-bottom: 0;
+}
+
+.post .posts-list h5 {
+  margin: 0;
+}
+
+.post {
+  font-family: var(--secondary-font);
+  font-size: var(--content-font-size);
+}
+
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6 {
+  color: var(--on-background-color);
+  font-family: var(--primary-font);
+  margin: 2.5rem 0 1rem 0;
+  padding: 0;
+}
+
+.post h1 {
+  font-size: var(--heading1);
+}
+.post h2 {
+  font-size: var(--heading2);
+}
+.post h3 {
+  font-size: var(--heading3);
+}
+.post h4 {
+  font-size: var(--heading4);
+}
+.post h5 {
+  font-size: var(--heading5);
+}
+.post h6 {
+  font-size: var(--heading6);
+}
+
+.post table {
+  width: 100%;
+}
+
+.post th,
+.post td {
+  padding: 0.8rem 1rem;
+}
+
+.post th {
+  font-family: var(--primary-font);
+  font-size: var(--heading5);
+}
+
+.post td {
+  font-size: var(--content-font-size);
 }
 
 a,

@@ -1,0 +1,27 @@
+---
+hidden: true # excludes the current page from being listed
+---
+
+<div id="posts-list" class="posts-list">
+  <ul>
+    {{ for index, post of search.pages("url^=/wrds/ hidden=false", "date=desc") }}
+      {{ if index != 0 }}
+        <hr>
+      {{ /if }}
+      <li>
+        <a href="{{ post.url }}">
+          <div class="row">
+            <div class="column column-75">
+              <h5>{{ post.title }}</h5>
+            </div>
+            <div class="column">
+              {{ if post.date }}
+                <h5><small>{{ post.date |> date('HUMAN_DATE') }}</small></h5>
+              {{ /if }}
+            </div>
+          </div>
+        </a>
+      </li>
+    {{ /for }}
+  </ul>
+</div>
